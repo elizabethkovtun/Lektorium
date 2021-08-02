@@ -1,0 +1,106 @@
+.dice {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 20px;
+    width: 170px;
+    height: 170px;
+    border: solid 5px #000;
+    border-radius: 20px;
+  
+    display: inline-flex;
+    vertical-align: top;
+    margin: 5px;
+  }
+  
+  .dice__point {
+    outline: solid 2px white;
+  }
+  
+  .dice__point::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    background-color: #000; 
+  }
+  
+  .dice_one {
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .dice_two {
+    justify-content: space-between;
+    order: 1;
+  }
+  
+  .dice_two {
+    justify-content: space-between;
+  }
+  
+  .dice_two .dice__point:nth-child(1) {
+    align-self: flex-end;
+  }
+  
+  
+  .dice_three {
+    justify-content: space-between;
+    order: 3;
+  }
+  
+  .dice_three .dice__point:nth-child(1) {
+    align-self: flex-end;
+  }
+  
+  .dice_three .dice__point:nth-child(2) {
+    align-self: center;
+  }
+  
+  
+  .dice_four {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  .dice_four .dice__point {
+    width: 50%;
+  }
+  
+  .dice_four .dice__point:nth-child(even) {  
+    text-align: right;
+  }
+  
+  .dice_five {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    order:2;
+  }
+    
+  .dice_five .dice__point:nth-child(3) {  
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dice_six {
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .conteiner_1 {
+    display: flex;
+      justify-content: center;
+  }
+  .conteiner_2 {
+    display: flex;
+    justify-content: center;
+  }
+  .conteiner_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
